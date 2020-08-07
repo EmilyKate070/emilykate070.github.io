@@ -1,0 +1,66 @@
+header {
+    height: 100vh;
+    background-image: url("nyc.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-size: cover;
+    margin-bottom: 30px;
+    scroll-snap-align: start;
+}
+
+.icons > * {
+
+    margin: 0 .2rem;
+}
+
+html, body {
+    scroll-snap-type: y mandatory;
+    max-width: 100vw;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    scroll-snap-align: end;
+}
+
+.landing-card {
+    padding: 2.5rem 2.5rem;
+    background-color: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+}
+
+#down-span {
+    position: absolute;
+    top: 85vh;
+}
+
+.name-line > img {
+    vertical-align: text-bottom;
+}
+
+#down {
+    padding: 3vh;
+    font-size: 2.5em;
+    background-color: transparent;
+    transition: background-color 0.5s;
+}
+
+.container {
+    min-height: 200vh;
+    scroll-snap-align: start;
+}
+
+#down:hover {
+    cursor: pointer;
+    background-color: #000;
+    transition: background-color 0.5s;
+    opacity: 0.65;
+}
